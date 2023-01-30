@@ -12,7 +12,7 @@ const images=["bg-hero"]
       <div className='absolute w-full  top-0 h-full bg-gradient-to-r from-black to-transparent opacity-[25%]' />
 
       <img className=' lg:hidden absolute top-[10rem]   w-[95%] h-[73px]  ' src={slogan} alt="slogan"  />
-        <div className=' absolute lg:relative bottom-[-16rem] lg:bottom-0 bg-black lg:bg-transparent h-[28rem] lg:h-full   flex flex-col lg:items-left   text-white justify-center w-full   lg:left-[3rem] mt-[5rem]'>
+        <div className=' absolute lg:relative bottom-[-16rem] lg:bottom-0 bg-black  lg:bg-transparent h-[28rem] lg:h-full   flex flex-col lg:items-left   text-white justify-center w-full   lg:left-[3rem] mt-[5rem]'>
         <img className=' hidden lg:block lg:relative  lg:top-[10rem]  w-[800px] h-[95px]  ' src={slogan} alt="slogan"  />
           <h3 className='text-white text-[32px] w-[20rem] lg:w-full lg:text-[38px]  lg:mt-[12rem] font-[800] ml-[2rem] lg:ml-0 text-left italic'>Fii un rider liber cu ajutorul nostru</h3>
           <p className='w-[20rem] lg:w-[30rem] ml-[2rem] lg:ml-[0rem] text-[20px] lg:text-[24px] font-[300]'>

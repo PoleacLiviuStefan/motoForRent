@@ -4,9 +4,10 @@ import Motorcycles from '../Motorcycles/Motorcycles'
 
 const Body = () => {
   return (
-    <div className='relative bg-white w-full h-[200rem] top-[15rem] lg:top-[4rem]'>
-        <About />
+    <div className='relative bg-white w-full h-[200rem] top-[15rem] lg:top-0'>
         <Motorcycles />
+        <About />
+        
     </div>
   )
 }

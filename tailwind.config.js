@@ -153,6 +153,25 @@ module.exports = {
            opacity:"0"
           }
         },
+        rezervaHoverBtn:{
+          '0%':{
+            backgroundColor:"#F9844A",
+            
+          },
+          '100%':{
+            backgroundColor:"#242424",
+            
+          }
+        },
+        reverseRezervaHoverBtn:{
+          '0%':{
+            backgroundColor:"#242424"
+            
+          },
+          '100%':{
+            backgroundColor:"#F9844A"
+          }
+        },
       }
     },
   },
