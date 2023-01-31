@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='relative bg-[#FFFFFF] flex flex-col items-center w-full h-full'>
         <h1 className='flex items-center text-[36px] lg:text-[64px] mt-[2rem] font-bold'><span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] mr-[1rem]' />DESPRE NOI<span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] ml-[1rem]' /></h1>
-        <p className='text-[18px] w-[70%] mt-[2rem] text-justify flex justify-center '>
+        <p className='text-[18px] w-[70%] mt-[2rem] text-justify flex-col items-center '>
               <span className='relative mr-2 text-[28px] text-white flex justify-center items-center bg-green-300 w-[28px] h-[28px] rounded-[30px]' ><TiTickOutline /></span>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quibusdam est. Veniam quae officia numquam incidunt, quidem enim doloremque, quo nulla explicabo voluptatem dolore, eveniet ut ipsum quaerat dolor ratione odio eos suscipit vel earum! Porro adipisci provident cupiditate est neque reiciendis doloremque.
               <br/>
               <br/>
