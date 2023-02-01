@@ -3,6 +3,7 @@ import {RiMotorbikeFill} from 'react-icons/ri'
 import {TbEngine} from 'react-icons/tb'
 import {RiOilFill} from 'react-icons/ri'
 import {MdArrowForwardIos} from 'react-icons/md'
+import { Route, Routes } from "react-router-dom"
 
 const MotorcycleCard = ({name,image,pret,an,cp,rezervor,cmc}) => {
   return (
