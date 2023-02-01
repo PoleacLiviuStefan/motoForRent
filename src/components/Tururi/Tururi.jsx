@@ -2,8 +2,8 @@ import React from 'react'
 
 const Tururi = () => {
   return (
-    <div name="Tururi" className='flex flex-col items-center mt-[5rem] lg:mt-[10rem]  '>
-        <h1 className='text-[36px] lg:text-[64px] font-bold'><span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] mr-[1rem]' />TURURUI GHIDATE<span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] ml-[1rem]' /></h1>
+    <div name="Tururi" className='flex flex-col items-center mt-[10rem] lg:mt-[10rem]  '>
+        <h1 className='text-[36px] text-center lg:text-[64px] font-bold'><span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] mr-[1rem]' />CURSURI PERFECTIONARE<span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] ml-[1rem]' /></h1>
         <div className='w-[70%]'>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi provident labore quidem, expedita dolore dolorum inventore laboriosam explicabo mollitia facere eius, tempora asperiores vero, quos voluptatum? Maxime tempore vitae a distinctio voluptas sapiente asperiores quae iure explicabo! Natus doloremque dolore enim quae laboriosam praesentium incidunt porro molestiae excepturi fuga?

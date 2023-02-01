@@ -7,13 +7,13 @@ import { Route, Routes } from "react-router-dom"
 
 const MotorcycleCard = ({name,image,pret,an,cp,rezervor,cmc}) => {
   return (
-    <div className='relative bg-white h-[34rem] lg:h-[37rem] w-full lg:w-[30rem] flex flex-col  items-center mt-[3rem] lg:mt-0 lg:ml-[3rem] '>
+    <div className='relative bg-white h-[34rem] lg:h-[37rem] w-full lg:w-[30rem] flex flex-col  items-center mt-[3rem] lg:mt-0  '>
           <div className='relative  h-[343px] lg:h-[25rem]'>
            <img className='w-[300px] lg:w-[350px] h-[343px] lg:h-[400px] ' src={image} />
           </div>
           <h2 className='text-black lg:text-[32px] text-[28px] font-bold ' >{name}</h2>
           <h3 className='lg:text-[18px] mt-[0rem]'>{pret} € /zi</h3>
-          <div className='flex w-[80%] justify-between text-[11px] lg:text-[14px] '>
+          <div className='flex w-full justify-between text-[11px] lg:text-[14px] '>
             <div className='flex '><span className='mr-2 mt-1 text-[#F9844A] '><RiMotorbikeFill /></span> {an}</div>
             <div className='flex'><span className='mr-2 mt-1 text-[#F9844A]'><TbEngine /></span> {cp} CP</div>
             <div className='flex'><span className='mr-1 mt-1 text-[#F9844A]'><RiOilFill /></span> {rezervor} l rezervor combustibil</div>

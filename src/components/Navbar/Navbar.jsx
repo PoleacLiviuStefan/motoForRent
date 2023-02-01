@@ -50,7 +50,7 @@ const Navbar = () => {
             offset={-150}
             href="Tururi Ghidate"
           >
-            <button onClick={()=>navigate("/")} className='flex'>TURURI GHIDATE <span className='  text-[25px] ml-2'><GiCartwheel /></span></button>
+            <button onClick={()=>navigate("/")} className='flex'>CURSURI PERFECTIONARE <span className='  text-[25px] ml-2'><GiCartwheel /></span></button>
           </Link>
           <Link
             activeClass="active"
@@ -95,7 +95,7 @@ const Navbar = () => {
             offset={-150}
             href="Tururi Ghidate"
           >
-            <button className='flex px-[6rem] ml-[1rem]'><span className='  text-[25px] mr-2'><GiCartwheel /></span>TURURI GHIDATE </button>
+            <button className='flex px-[6rem] ml-[1rem]'><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
           </Link>
           <Link
             activeClass="active"
