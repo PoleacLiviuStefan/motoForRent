@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tururi = () => {
   return (
-    <div className='flex flex-col items-center mt-[5rem] lg:mt-[10rem]  '>
+    <div name="Tururi" className='flex flex-col items-center mt-[5rem] lg:mt-[10rem]  '>
         <h1 className='text-[36px] lg:text-[64px] font-bold'><span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] mr-[1rem]' />TURURUI GHIDATE<span className='bg-black h-[4px]  w-[3rem] lg:w-[4rem] ml-[1rem]' /></h1>
         <div className='w-[70%]'>
         <p>

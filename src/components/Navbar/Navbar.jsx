@@ -6,6 +6,8 @@ import {FaMotorcycle} from 'react-icons/fa'
 import {AiFillQuestionCircle} from 'react-icons/ai'
 import {GiCartwheel} from 'react-icons/gi'
 import logo from './logo2.png'
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Navbar = () => {
 
   const [activeMobileMenu,setActiveMobileMenu]=useState(false)
@@ -18,10 +20,36 @@ const Navbar = () => {
         <img src className='lg:absolute z-30 lg:right-[4rem] w-[150px] h-[50px] ' src={logo} />
         <div className='absolute top-0 z-20 lg:hidden bg-white h-[5rem] w-full' />
         <div className=' hidden lg:flex left-[2rem] w-[30rem] justify-between ' >
-          <button className='flex'>MOTOCICLETE <span className='  ml-2 text-[25px]'><FaMotorcycle /></span></button>
-          <button className='flex'>TURURI GHIDATE <span className='  text-[25px] ml-2'><GiCartwheel /></span></button>
-          <button className='flex'>DESPRE <span className=' ml-2 text-[25px]'><AiFillQuestionCircle /></span></button>
-
+        <Link
+            activeClass="active"
+            to="Motorcycles"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            href="Motociclete"
+          >
+            <button className='flex'>MOTOCICLETE <span className='  ml-2 text-[25px]'><FaMotorcycle /></span></button>
+          </Link>
+          <Link
+            activeClass="active"
+            to="Tururi"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            href="Tururi Ghidate"
+          >
+            <button className='flex'>TURURI GHIDATE <span className='  text-[25px] ml-2'><GiCartwheel /></span></button>
+          </Link>
+          <Link
+            activeClass="active"
+            to="About"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            href="Despre Noi"
+          >
+            <button className='flex'>DESPRE <span className=' ml-2 text-[25px]'><AiFillQuestionCircle /></span></button>
+          </Link>
         </div>
         <div onClick={()=>{setActiveMobileMenu(prev=>!prev)}} className='fixed z-20 lg:hidden left-[2rem] top-[2rem] flex flex-col  z-50  '>
             <div className={`absolute z-20 top-[-1rem] left-[-.7rem] rounded-[15px]  w-[50px] h-[50px] ${activeMobileMenu ? "bg-black":"bg-transparent"}`} >
@@ -37,9 +65,36 @@ const Navbar = () => {
         </div>
         <div className={`fixed ${activeMobileMenu ? "animate-[appearMenu_.5s_ease-in-out_forwards]":"animate-[reverseAppearMenu_.5s_ease-in-out_forwards]"}  bg-white w-full h-[11rem] left-0 `} >
           <div className='absolute flex flex-col lg:hidden items-center text-left w-full h-[9rem]  justify-between ' >
-            <button className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
+          <Link
+            activeClass="active"
+            to="Motorcycles"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            href="Contact"
+          >
+             <button className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
+          </Link>
+          <Link
+            activeClass="active"
+            to="Tururi"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            href="Tururi Ghidate"
+          >
             <button className='flex px-[6rem] ml-[1rem]'><span className='  text-[25px] mr-2'><GiCartwheel /></span>TURURI GHIDATE </button>
+          </Link>
+          <Link
+            activeClass="active"
+            to="About"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            href="Despre Noi"
+          >
             <button className='flex px-[6rem] mr-[3rem] '><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
+          </Link>
            
           </div>
         </div>
