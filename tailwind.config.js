@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       backgroundImage:{
         'hero':"url('/public/Images/bg-hero.jpg')",
-        'slogan':"url('/public/Images/slogan.png')"
+        'slogan':"url('/public/Images/slogan.png')",
+        'fixedimg':"url('/src/components/Motorcycles/Images/moto2.jpeg')"
       },
       keyframes:{
         hoverbtn:{
@@ -170,6 +171,15 @@ module.exports = {
           },
           '100%':{
             backgroundColor:"#F9844A"
+          }
+        },
+        appear:{
+          '0%':{
+            opacity:"0"
+            
+          },
+          '100%':{
+            opacity:"100%"
           }
         },
       }

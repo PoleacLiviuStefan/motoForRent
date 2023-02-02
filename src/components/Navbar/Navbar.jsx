@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed flex z-50 justify-center items-center top-0 left-0 w-full h-[5rem] bg-white '>
-      <div className='lg:absolute top-[1rem] z-30  lg:right-[4rem]'>
+      <div className='lg:absolute top-[1rem] z-30  right-[2rem]'>
            <Link
             activeClass="active"
             to="Hero"
@@ -40,7 +40,7 @@ const Navbar = () => {
             href="Motociclete"
             delay={500}
           >
-            <button onClick={()=>navigate("/")} className='flex'>MOTOCICLETE <span className='  ml-2 text-[25px]'><FaMotorcycle /></span></button>
+            <button onClick={()=>navigate("/")} className='relative flex right-[5rem] '>MOTOCICLETE <span className='  ml-2 text-[25px]'><FaMotorcycle /></span></button>
           </Link>
           <Link
             activeClass="active"
@@ -50,7 +50,7 @@ const Navbar = () => {
             offset={-150}
             href="Tururi Ghidate"
           >
-            <button onClick={()=>navigate("/")} className='flex'>CURSURI PERFECTIONARE <span className='  text-[25px] ml-2'><GiCartwheel /></span></button>
+            <button onClick={()=>navigate("/")} className='flex w-[20rem] '>CURSURI PERFECTIONARE <span className='relative    text-[25px] ml-2 '><GiCartwheel /></span></button>
           </Link>
           <Link
             activeClass="active"
@@ -95,7 +95,7 @@ const Navbar = () => {
             offset={-150}
             href="Tururi Ghidate"
           >
-            <button className='flex px-[6rem] ml-[1rem]'><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
+            <button className='flex items-center text-left px-[6rem] ml-[1rem]'><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
           </Link>
           <Link
             activeClass="active"
