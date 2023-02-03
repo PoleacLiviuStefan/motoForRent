@@ -182,6 +182,110 @@ module.exports = {
             opacity:"100%"
           }
         },
+        appearText:{
+          '0%':{
+            opacity:"0",
+            height:"0px"
+            
+          },
+          '100%':{
+            opacity:"100%",
+            height:"100%"
+          }
+        },
+        disappear:{
+          '0%':{
+            opacity:"100%"
+            
+          },
+          '100%':{
+            opacity:"0"
+          }
+        },
+        disappearText:{
+          '0%':{
+            opacity:"100%",
+            height:"100%"
+            
+          },
+          '100%':{
+            opacity:"0",
+            height:"0"
+          }
+        },
+        animContact:{
+          '0%':{
+            background:"#FF712B",
+            color:"white"
+            
+          },
+          '100%':{
+            background:"transparent",
+            color:"#F9844A"
+          }
+        },
+        reverseAnimContact:{
+          '0%':{
+            background:"transparent",
+            color:"#F9844A"
+            
+          },
+          '100%':{
+            background:"#FF712B",
+            color:"white"
+          }
+        },
+        transformToOrange:{
+          '0%':{
+            color:"black"
+          },
+          '100%':{
+            color:"#F9844A"
+          }
+        },
+        reverseTransformToOrange:{
+          '0%':{
+            
+            color:"#F9844A"
+          },
+          '100%':{
+            color:"black"
+          }
+        },
+        lineToRight:{
+          '0%':{
+            width:"0"
+          },
+          '100%':{
+            width:"100%"
+          }
+        },
+        reverseLineToRight:{
+          '0%':{
+            opacity:"100%",
+            width:"100%"
+          },
+          '100%':{
+            width:"0",
+            opacity:"0"
+          }
+        },
+        rotateArrow:{
+          '0%':{
+          rotate:"0"
+          },
+          '100%':{
+           rotate:"90deg"
+          }
+        },
+        reverseRotateArrow:{
+          '0%':{
+          rotate:"90deg"
+          },
+          '100%':{
+           rotate:"0"
+          }
+        },
       }
     },
   },

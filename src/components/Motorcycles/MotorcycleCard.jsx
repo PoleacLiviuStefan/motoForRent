@@ -19,7 +19,7 @@ const MotorcycleCard = ({name,image,pret,an,cp,rezervor,cmc}) => {
             <div className='flex'><span className='mr-1 mt-1 text-[#F9844A]'><RiOilFill /></span> {rezervor} l rezervor combustibil</div>
             <div className='flex'><span className='mr-1 mt-1 text-[#F9844A]'><TbEngine /></span> {rezervor} cmc</div>
           </div>
-          <button className='absolute flex justify-center items-center tracking-[2px] font-bold bottom-0 bg-[#F9844A] rounded-[2px] w-full h-[4rem] text-white animate-[reverseRezervaHoverBtn_.5s_ease-in-out_forwards] hover:animate-[rezervaHoverBtn_.5s_ease-in-out_forwards] text-[14px]'>
+          <button className='absolute flex justify-center items-center tracking-[2px] font-bold bottom-0 bg-[#F9844A] rounded-[5px] w-full h-[4rem] text-white animate-[reverseRezervaHoverBtn_.5s_ease-in-out_forwards] hover:animate-[rezervaHoverBtn_.5s_ease-in-out_forwards] text-[14px]'>
             REZERVA ACUM <span className="text-[20px]"><MdArrowForwardIos /></span>
 
           </button>

@@ -4,19 +4,22 @@ import helmet from "./Images/helmet.png"
 import cagula from "./Images/cagula.png"
 import manusi from './Images/manusi.png'
 import genunchiere from './Images/genunchiere.png'
+import {AiOutlinePhone} from 'react-icons/ai'
+
 
 const MotorcyclesReservation = ({locked,name,imagini,preturi,an,cp,rezervor,cmc,greutate,garantie,transmisie,autonomie,abs,inaltime}) => {
   
   const [currentImage,setCurrentImage]=useState(0)
   const[animateImg,setAnimateImg]=useState(false)
-  
+  const [btnText,setBtnText]=useState("Suna Acum")
 
 
   return (
-    <div className="relative  left-0 top-[7rem] lg:top-0  w-full  h-[135rem] lg:h-[110rem] flex justify-center   ">
-      <div className='relative flex flex-col z-40 lg:flex-row justify-center lg:items-center bg-gray-100 w-full lg:w-[80%] h-[90rem]  ' >
+    <div className="relative  left-0 top-[7rem] lg:top-0  w-full  h-[137rem] lg:h-[110rem] flex justify-center   ">
+      <div className='relative mt-[3rem] flex flex-col z-40 lg:flex-row justify-center lg:items-center bg-gray-100 w-full lg:w-[80%] h-[90rem]  ' >
         <div className='  flex flex-col justify-end items-center h-[44%]  w-full'>
          <img  className={`relative lg:absolute  lg:top-[7rem] w-[300px] lg:w-[500px] h-[343px] lg:h-[571px] ${animateImg && "animate-[appear_1s_ease-in-out_forwards]"} `} src={imagini[currentImage]} />
+         
          <div className='flex'>
          {
           imagini.map((imagine,value)=>{
@@ -34,8 +37,8 @@ const MotorcyclesReservation = ({locked,name,imagini,preturi,an,cp,rezervor,cmc,
             </div>
             
          </div>
-          <div className='relative flex flex-col  items-center  mt-[2rem] justify-start h-[70%] w-full lg:w-[70%] ' >
-            <h1 className='lg:text-[38px] mt-[2rem] text-[32px] font-bold text-left'>{name}</h1>
+          <div className='relative flex flex-col  items-center   mt-[2rem] justify-start h-[80%] lg:h-[70%] w-full lg:w-[70%] ' >
+            <h1 className='lg:text-[38px] mt-[4rem] lg:mt-[2rem]  text-[32px] font-bold text-left'>{name}</h1>
             <p className='lg:text-[16px] mt-[1rem] text-gray-500 text-[14px] w-[80%]  text-left'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis ipsam rerum ratione officiis consequatur, amet aut magnam, perferendis soluta quia tenetur sint vitae aspernatur quas at? Alias illo ducimus provident, obcaecati debitis quisquam pariatur quaerat perferendis? Impedit repellendus debitis nostrum suscipit doloribus quia, voluptate possimus numquam asperiores perspiciatis fuga.
             </p>
@@ -50,11 +53,13 @@ const MotorcyclesReservation = ({locked,name,imagini,preturi,an,cp,rezervor,cmc,
                 <h3>ABS : {abs}  </h3>
                 <h3>Inaltime : {inaltime} mm  </h3>
             </div>
-            
+            <div onClick={()=>setBtnText("0751030171")}  className='relative mb-[2rem] flex flex-col items-center justify-center cursor-pointer border-[2px] border-[#FF712B] mt-[1rem] text-white bg-[#FF712B] w-[90%] h-[4rem] rounded-[5px] animate-[reverseAnimContact_.5s_ease-in-out_forwards] hover:animate-[animContact_.5s_ease-in-out_forwards]'>
+              <a href="tel:+40-751-030-171" className='font-bold text-[18px] lg:text-[22px] flex' >{btnText=="0751030171" && <span className='mt-1 mr-2'><AiOutlinePhone /></span>} {btnText}</a>
+            </div>
           </div>
-          <div className='absolute top-[90rem] lg:top-[75rem] z-40 flex flex-col items-center w-full  bg-gray-100 h-[40rem] w-full'>
+          <div className='absolute top-[90rem] lg:top-[75rem] z-40 flex flex-col items-center w-full  bg-gray-100 h-[50rem] w-full'>
              
-              <h2 className='relative text-[38px] lg:text-[48px] bg-black text-white px-4  font-bold mt-[2rem]'> <span  className='absolute top-[-1.2rem] lg:top-[-1.5rem] z-10  w-[19rem] lg:w-[24rem] h-[4.5rem] lg:h-[5.7rem] bg-transparent border-[2px] border-black' /> <span className='z-20'>Ce Mai Oferim ?</span></h2> 
+              <h2 className='relative text-[38px] lg:text-[48px] bg-black text-white px-4  font-bold mt-[6rem] lg:mt-[2rem]'> <span  className='absolute top-[-1.2rem] lg:top-[-1.5rem] z-10  w-[19rem] lg:w-[24rem] h-[4.5rem] lg:h-[5.7rem] bg-transparent border-[2px] border-black' /> <span className='z-20'>Ce Mai Oferim ?</span></h2> 
               <h2 className='text-[28px] lg:text-[32px]'>( Inclus in pret )</h2>
               <div className='flex flex-col mt-[2rem] w-full items-center text-white justify-center   '>
                 <div className='relative flex w-[80%] lg:w-[60%] justify-between items-center h-[4rem]  '>
