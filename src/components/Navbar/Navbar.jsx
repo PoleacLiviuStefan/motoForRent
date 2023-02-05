@@ -103,7 +103,7 @@ const Navbar = () => {
             offset={-150}
             href="Tururi Ghidate"
           >
-            <button className='relative w-[21.3rem] flex items-center text-left px-[6rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
+            <button className='relative w-[21.3rem] flex items-center text-left px-[6.1rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
           </Link>
           <Link
             activeClass="active"

@@ -15,8 +15,8 @@ const MotorcyclesReservation = ({locked,name,imagini,preturi,an,cp,rezervor,cmc,
 
 
   return (
-    <div className="relative  left-0 top-[7rem] lg:top-0  w-full  h-[137rem] lg:h-[110rem] flex justify-center   ">
-      <div className='relative mt-[3rem] flex flex-col z-40 lg:flex-row justify-center lg:items-center bg-gray-100 w-full lg:w-[80%] h-[90rem]  ' >
+    <div className="relative bg-gray-100  left-0 top-[7rem] lg:top-0  w-full  h-[137rem] lg:h-[110rem] flex justify-center   ">
+      <div className='relative mt-[3rem] flex flex-col z-40 lg:flex-row justify-center lg:items-center  w-full lg:w-[80%] h-[90rem]  ' >
         <div className='  flex flex-col justify-end items-center h-[44%]  w-full'>
          <img  className={`relative lg:absolute  lg:top-[7rem] w-[300px] lg:w-[500px] h-[343px] lg:h-[571px] ${animateImg && "animate-[appear_1s_ease-in-out_forwards]"} `} src={imagini[currentImage]} />
          
