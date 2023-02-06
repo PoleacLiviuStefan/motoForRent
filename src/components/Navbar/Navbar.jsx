@@ -19,7 +19,19 @@ const Navbar = () => {
 
   return (
     <div className='fixed flex z-50 justify-center shadow-xl items-center top-0 left-0 w-full h-[5rem] bg-white '>
+      <div className='lg:absolute top-[1rem] z-30  right-[2rem]'>
+           <Link
+            activeClass="active"
+            to="Hero"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            href="Hero"
+          >
+        <img onClick={()=>navigate("/")} src className='  cursor-pointer  w-[150px] h-[50px] ' src={logo} />
 
+        </Link>
+        </div>
         <div className='absolute top-0 z-10 lg:hidden bg-white h-[5rem] w-full' />
         <div className=' hidden lg:flex left-[2rem] w-[30rem] justify-between ' >
         <Link
@@ -81,7 +93,7 @@ const Navbar = () => {
             offset={-100}
             href="Contact"
           >
-             <button className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
+             <button onClick={()=>navigate("/")} className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
           </Link>
           <Link
             activeClass="active"
@@ -91,7 +103,7 @@ const Navbar = () => {
             offset={-150}
             href="Tururi Ghidate"
           >
-            <button className='relative w-[21.3rem] flex items-center text-left px-[6.1rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
+            <button onClick={()=>navigate("/")} className='relative w-[21.3rem] flex items-center text-left px-[6.1rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
           </Link>
           <Link
             activeClass="active"
@@ -101,7 +113,7 @@ const Navbar = () => {
             offset={-150}
             href="Despre Noi"
           >
-            <button className='flex px-[6rem] mr-[3rem] '><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
+            <button onClick={()=>navigate("/")} className='flex px-[6rem] mr-[3rem] '><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
           </Link>
            
           </div>

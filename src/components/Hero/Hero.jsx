@@ -19,7 +19,7 @@ const images=["bg-hero","bg-fixedimg"]
       <img className=' lg:hidden absolute top-[10rem]   w-[95%] h-[73px]  ' src={slogan} alt="slogan"  />
         <div className=' absolute lg:relative bottom-[-16rem] lg:bottom-0 bg-black  lg:bg-transparent h-[28rem] lg:h-full   flex flex-col lg:items-left   text-white justify-center w-full   lg:left-[3rem] mt-[5rem]'>
         <img className=' hidden lg:block lg:relative  lg:top-[10rem]  w-[800px] h-[95px]  ' src={slogan} alt="slogan"  />
-          <h3 className='text-white  text-[32px] w-[20rem] lg:w-full lg:text-[38px]  lg:mt-[12rem] font-extrabold ml-[2rem] lg:ml-0 text-left italic'>Fii un rider liber cu ajutorul nostru</h3>
+          <h3 className='text-white  text-[28px] leading-[2rem] h-[7rem] w-[20rem] lg:w-[50%] lg:text-[34px]  lg:mt-[12rem] font-extrabold ml-[2rem] lg:ml-0 text-left italic'>{currentImage==0 ? "Motociclete de inchiriat in Bucuresti cu preturi incepand de la 50 € / zi" :"Fii un rider liber cu ajutorul nostru" }</h3>
           <p className='w-[20rem] lg:w-[32rem] ml-[2rem] lg:ml-[0rem] text-[20px] lg:text-[24px] font-[300]'>
             Haide chiar astazi sa inchiriezi o motocicleta !
           </p>
