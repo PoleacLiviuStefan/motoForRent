@@ -11,7 +11,8 @@ const EtapeInchiriere = () => {
         <div className='flex justify-center items-center text-white w-[75px] h-[75px] text-[40px] lg:text-[50px] bg-gray-500 rounded-[100%]' >
             <GiFullMotorcycleHelmet />
         </div>
-       
+        </Fade>
+        <Fade bottom>
         <h2 className='font-[800] text-center w-[20rem] lg:w-full text-[22px] lg:text-[34px] mt-[1rem]'>
             CAT DE USOR ESTE SA INCHIRIEZI O MOTOCICLETA ?
         </h2>
@@ -27,7 +28,7 @@ const EtapeInchiriere = () => {
                 <Fade left>
                 <Step number="1" title="Alege motocicleta dorita" />
                 </Fade>
-                <Fade top>
+                <Fade bottom>
                 <Step number="2" title="Contacteaza-ne pentru a face inchirierea" />
                 </Fade>
                 <Fade right>
