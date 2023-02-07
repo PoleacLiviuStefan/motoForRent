@@ -35,7 +35,7 @@ const Footer = () => {
         <div className='flex flex-col text-white items-center h-[12rem] mt-[2rem] '>
             <h3 className='flex  justify-center items-center rounded-[5px] cursor-pointer  font-bold text-[20px] lg:text-[24px] w-[15rem] h-[4rem] border-[2px] border-white ' > Navigheaza
           </h3>
-            <div className='flex flex-col items-left mt-[1rem]  '>    
+            <div className='flex flex-col items-left mt-[1rem] w-[15rem]  '>    
             <Link
             activeClass="active"
             to="Motorcycles"

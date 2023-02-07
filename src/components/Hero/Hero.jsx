@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react'
 import {MdArrowForwardIos} from 'react-icons/md'
 import slogan from './slogan.png'
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import Fade from 'react-reveal/Fade';
 const Hero = () => {
 const [currentImage,setCurrentImage]=useState(0)
 const [transitionImg,setTransitionImg]=useState(true)
@@ -15,13 +15,15 @@ const images=["bg-hero","bg-fixedimg"]
 
       <div className='absolute bg-black  w-full h-full opacity-[15%]' />
       <div className='absolute w-full  top-0 h-full bg-gradient-to-r from-black to-transparent opacity-[25%]' />
-
+      <Fade left>
       <img className=' lg:hidden absolute top-[10rem]   w-[95%] h-[73px]  ' src={slogan} alt="slogan"  />
+      
         <div className=' absolute lg:relative bottom-[-16rem] lg:bottom-0 bg-black  lg:bg-transparent h-[28rem] lg:h-full   flex flex-col lg:items-left   text-white justify-center w-full   lg:left-[3rem] mt-[5rem]'>
         <img className=' hidden lg:block lg:relative  lg:top-[10rem]  w-[800px] h-[95px]  ' src={slogan} alt="slogan"  />
+        
           <h3 className='text-white  text-[28px] leading-[2rem] h-[7rem] w-[20rem] lg:w-[50%] lg:text-[34px]  lg:mt-[12rem] font-extrabold ml-[2rem] lg:ml-0 text-left italic'>{currentImage==0 ? "Motociclete de inchiriat in Bucuresti cu preturi incepand de la 50 € / zi" :"Fii un rider liber cu ajutorul nostru" }</h3>
           <p className='w-[20rem] lg:w-[32rem] ml-[2rem] lg:ml-[0rem] text-[20px] lg:text-[24px] font-[300]'>
-            Haide chiar astazi sa inchiriezi o motocicleta !
+            {currentImage==0 ?"Fara limita de kilometri pe teritoriul Romaniei" :"Haide chiar astazi sa inchiriezi o motocicleta !"}
           </p>
           <Link
             activeClass="active"
@@ -53,7 +55,7 @@ const images=["bg-hero","bg-fixedimg"]
         }} className='text-white   ml-[10px] mt-[5px] cursor-pointer' ><MdArrowForwardIos /></span></div>
         </div>
        
-        
+        </Fade>
     </div>
   )
 }

@@ -4,17 +4,23 @@ import {GiPathDistance} from 'react-icons/gi'
 import moto1 from '../Motorcycles/Images/moto1.jpeg'
 import {AiOutlineCheckSquare} from 'react-icons/ai'
 import {MdArrowForwardIos} from 'react-icons/md'
-
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 const Tururi = () => {
   const [showText,setShowText]=useState(-1)
   return (
     <div name="Tururi" className='relative flex flex-col items-center w-full h-[100rem] lg:h-[80rem]    '>
-      <div className='flex items-center justify-center w-full' >
-        <span className='w-[20%] h-[3px] bg-black mr-[2rem] ' />
-        <span className='text-[80px] lg:text-[150px] ' ><GiPathDistance /></span>
-        <span className='w-[20%] h-[3px] bg-black rounded-[2px] ml-[2rem]' />
-      </div>
+      <Fade top>
+        <div className='flex items-center justify-center w-full' >
+          <span className='w-[20%] h-[3px] bg-black mr-[2rem] ' />
+          <span className='text-[80px] lg:text-[150px] ' ><GiPathDistance /></span>
+          <span className='w-[20%] h-[3px] bg-black rounded-[2px] ml-[2rem]' />
+        </div>
+      </Fade>
+      <Fade top>
         <h1 className='text-[28px] mt-[1rem] w-[70%] lg:w-full lg:text-center text-left lg:text-[56px] font-[800]'>CURSURI DE PERFECTIONARE</h1>
+        </Fade> 
+        <Fade bottom>
         <div className='w-[80%] lg:w-[60%] mt-[2rem]'>
           <div className='flex lg:flex-row flex-col'>
         <img src={moto1} className="w-[350px]" />
@@ -60,6 +66,7 @@ const Tururi = () => {
           </div>
         
         </div>
+        </Fade>
       <div className='relative   h-full w-full mt-[10rem] h-[20rem] ' >
           <div className='absolute  flex justify-center items-center top-0 bg-fixed w-full h-[20rem] bg-fixedimg bg-cover' >
           <div className='absolute z-10 top-0 bg-black bg-opacity-40 w-full h-[20rem]' />
