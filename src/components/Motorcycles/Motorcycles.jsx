@@ -19,7 +19,7 @@ const Motorcycles = () => {
                 <MotorcycleCard  image={kawasaki} name={<>KAWASAKI<span className='text-[#F9844A]'> VERSYS </span></>} pret={<><span className='font-bold'> 50-60</span></>} an="2014" cp="64" rezervor="19" cmc="650" topCase={true}  />
             </div>
             <div className='relative' onClick={()=>navigate("/BMW-r1200gs")}>
-                <MotorcycleCard  image={bmw} name={<>BMW<span className='text-[#F9844A]'> R1200GS ADVENTURE  </span></>} pret={<><span className='font-bold'> 75-90</span></>} an="2007" cp="98" rezervor="20" cmc="1170" topCase={true} />
+                <MotorcycleCard  image={bmw} name={<>BMW<span className='text-[#F9844A]'> R1200GS ADVENTURE  </span></>} pret={<><span className='font-bold'> 75-90</span></>}  an="2007" cp="98" rezervor="20" cmc="1170" topCase={true} />
             </div>
         </div>
         
