@@ -21,7 +21,7 @@ const About = () => {
         <Fade bottom>
         <p className='text-[18px] w-[80%] lg:w-[60%] mt-[2rem] text-justify flex-col items-center '>
           Suntem motociclisti si instructori moto cu o puternica dorinta de a vedea cat mai multi motociclisti pe sosele !
-          Inchiriem motociclete care
+          Inchiriem motociclete la un pret accesibil pentru toate lumea !
           <br /><span className='font-bold '>Haide si tu alaturi de noi !</span>
 
              
