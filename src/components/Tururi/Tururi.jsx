@@ -70,7 +70,9 @@ const Tururi = () => {
       <div className='relative   h-full w-full mt-[10rem] h-[20rem] ' >
           <div className='absolute  flex justify-center items-center top-0 bg-fixed w-full h-[20rem] bg-fixedimg bg-cover' >
           <div className='absolute z-10 top-0 bg-black bg-opacity-40 w-full h-[20rem]' />
+            <Fade>
               <h3 className='relative  w-[18rem] lg:w-[40rem]  z-40  text-[28px] lg:text-[38px] font-bold text-left  text-white'>ITI OFERIM O EXPERIENTA UNICA</h3>
+            </Fade>
             </div>
           
       </div>
