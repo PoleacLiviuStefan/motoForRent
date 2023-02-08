@@ -7,7 +7,7 @@ import {MdArrowForwardIos} from 'react-icons/md'
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 const Tururi = () => {
-  const [showText,setShowText]=useState(-1)
+  const [showText,setShowText]=useState(1)
   return (
     <div name="Tururi" className='relative flex flex-col items-center w-full h-[100rem] lg:h-[80rem]    '>
       <Fade top>
