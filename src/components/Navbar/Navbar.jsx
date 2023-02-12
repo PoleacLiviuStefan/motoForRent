@@ -32,6 +32,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-150}
+            duration={500}
             href="Hero"
           >
         <img onClick={()=>navigate("/")} src className='  cursor-pointer  w-[150px] h-[50px] ' src={logo} />
@@ -49,6 +50,7 @@ const Navbar = () => {
             smooth={true}
             offset={-150}
             href="Motociclete"
+            duration={500}
             delay={500}
           >
             <button onMouseEnter={()=>setActivAnim(0)} onMouseLeave={()=>setActivAnim(-1)} onClick={()=>navigate("/")} className='relative flex right-[5rem] animate-[reverseTransformToOrange_.5s_ease-in-out_forwards] hover:animate-[transformToOrange_.5s_ease-in-out_forwards]'>MOTOCICLETE <span className='  ml-2 text-[25px]'><FaMotorcycle /></span>
@@ -61,6 +63,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-150}
+            duration={500}
             href="Tururi Ghidate"
           >
             <button onMouseEnter={()=>setActivAnim(1)} onMouseLeave={()=>setActivAnim(-1)} onClick={()=>navigate("/")} className='relative flex w-[15.5rem] animate-[reverseTransformToOrange_.5s_ease-in-out_forwards] hover:animate-[transformToOrange_.5s_ease-in-out_forwards] '>CURSURI PERFECTIONARE <span className='relative    text-[25px] ml-2 '><GiCartwheel /></span>
@@ -73,6 +76,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-150}
+            duration={500}
             href="Despre Noi"
           >
             <button onMouseEnter={()=>setActivAnim(2)} onMouseLeave={()=>setActivAnim(-1)}  onClick={()=>navigate("/")} className='relative flex left-[5rem] animate-[reverseTransformToOrange_.5s_ease-in-out_forwards] hover:animate-[transformToOrange_.5s_ease-in-out_forwards]'>DESPRE <span className=' ml-2 text-[25px]'><AiFillQuestionCircle /></span><span className={`absolute  bottom-[-.9rem] left-0 w-full flex items-center  ${activAnim==2 ? "animate-[appear_.2s_linear_forwards]" :"animate-[disappear_.5s_linear_forwards]"}`}><span className={`bg-[#F9844A] w-0 h-[2px] ${activAnim==2 ? "animate-[lineToRight_.5s_linear_forwards]" :"animate-[reverseLineToRight_.5s_linear_forwards]"} `} /><GiCarWheel /></span></button>
@@ -104,9 +108,10 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-100}
+            duration={500}
             href="Contact"
           >
-             <button onClick={()=>navigate("/")} className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
+             <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}}  className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
           </Link>
           <Link
             activeClass="active"
@@ -114,9 +119,10 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-150}
+            duration={500}
             href="Tururi Ghidate"
           >
-            <button onClick={()=>navigate("/")} className='relative w-[21.3rem] flex items-center text-left px-[6.1rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
+            <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}} className='relative w-[21.3rem] flex items-center text-left px-[6.1rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
           </Link>
           <Link
             activeClass="active"
@@ -124,9 +130,10 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             offset={-150}
+            duration={500}
             href="Despre Noi"
           >
-            <button onClick={()=>navigate("/")} className='flex px-[6rem] mr-[3rem] '><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
+            <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}} className='flex px-[6rem] mr-[3rem] '><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
           </Link>
            
           </div>

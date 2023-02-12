@@ -8,7 +8,8 @@ module.exports = {
       backgroundImage:{
         'hero':"url('/public/Images/bg-hero.jpg')",
         'slogan':"url('/public/Images/slogan.png')",
-        'fixedimg':"url('/src/components/Motorcycles/Images/moto2.jpeg')"
+        'fixedimg':"url('/src/components/Motorcycles/Images/moto2.jpeg')",
+        'fixedimg':"url('/public/Images/banner_decoration.jpg')"
       },
       keyframes:{
         hoverbtn:{

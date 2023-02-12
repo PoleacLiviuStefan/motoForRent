@@ -11,7 +11,7 @@ const [transitionImg,setTransitionImg]=useState(true)
 const images=["bg-hero","bg-fixedimg"]
 
   return ( 
-    <div name="Hero" className={`relative  bg-fixed ${images[currentImage]} flex justify-center bg-cover bg-center w-screen h-screen  `} >
+    <div name="Hero" className={`relative ${images[currentImage]} flex justify-center bg-cover bg-center w-screen h-screen  `} >
 
       <div className='absolute bg-black  w-full h-full opacity-[15%]' />
       <div className='absolute w-full  top-0 h-full bg-gradient-to-r from-black to-transparent opacity-[25%]' />
