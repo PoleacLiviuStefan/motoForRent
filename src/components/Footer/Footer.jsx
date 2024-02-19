@@ -8,11 +8,11 @@ import {MdArrowForwardIos} from 'react-icons/md'
 import {FaMotorcycle} from 'react-icons/fa'
 import {AiFillQuestionCircle} from 'react-icons/ai'
 import {GiCartwheel} from 'react-icons/gi'
-
+import waygital from './waygital.webp'
 const Footer = () => {
     const navigate = useNavigate();
   return (
-    <div name="Footer" className='relative mt-[10rem] bg-orange-400 w-full h-[50rem] lg:h-[30rem] flex flex-col items-center lg:justify-between py-[6rem] lg:py-0 lg:px-[10rem] lg:grid lg:grid-cols-3  '>
+    <div name="Footer" className='relative mt-[12rem] bg-orange-400 w-full h-[50rem] lg:h-[30rem] flex flex-col items-center lg:justify-between py-[6rem] lg:py-0 lg:px-[10rem] lg:grid lg:grid-cols-3  '>
          <Link
             activeClass="active"
             to="Hero"
@@ -69,7 +69,8 @@ const Footer = () => {
           </Link>
             </div>
         </div>
-        <div className='absolute w-full flex justify-center items-center h-[2rem] bottom-0 text-white' > @ 2023 4MotoForRent  </div>
+        <div className='absolute w-full flex justify-center items-center h-[2rem] bottom-0 text-white' > @ 2023 4MotoForRent         <a href="https://www.waygital.ro/" className='absolute left-2 flex'>powered by <img src={waygital} className='ml-2 w-[60px] h-[20px]'/></a>
+        <div className='flex flex-col items-center'></div>  </div>
     </div>
   )
 }

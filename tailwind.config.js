@@ -7,9 +7,11 @@ module.exports = {
     extend: {
       backgroundImage:{
         'hero':"url('/public/Images/bg-hero.jpg')",
+        'banner':"url('/public/Images/bmw-panorama.jpg')",
         'slogan':"url('/public/Images/slogan.png')",
-        'fixedimg':"url('/src/components/Motorcycles/Images/moto2.jpeg')",
-        'fixedimg':"url('/public/Images/banner_decoration.jpg')"
+        'hero2': "url('/public/Images/bmw-hero-2.jpg')",
+        'hero3':"url('/public/Images/yamahaMt7-banner.jpg')",
+        'fixedimg':"url('/public/Images/banner_decoration.jpg')",
       },
       keyframes:{
         hoverbtn:{

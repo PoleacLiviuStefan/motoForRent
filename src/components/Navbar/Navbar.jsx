@@ -12,7 +12,7 @@ import {GiCarWheel} from 'react-icons/gi'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade'
-
+import { Link as RouterLink } from 'react-router-dom'
 const Navbar = () => {
 
   const [activeMobileMenu,setActiveMobileMenu]=useState(false)
@@ -26,18 +26,13 @@ const Navbar = () => {
     
       <div className='lg:absolute top-[1rem] z-30  right-[2rem]'>
         <Fade>
-           <Link
+           <RouterLink
             activeClass="active"
-            to="Hero"
-            spy={true}
-            smooth={true}
-            offset={-150}
-            duration={500}
-            href="Hero"
+            to="/"
           >
-        <img onClick={()=>navigate("/")} src className='  cursor-pointer  w-[150px] h-[50px] ' src={logo} />
+        <img onClick={()=>window.scrollTo({top:0,left:0})} src className='  cursor-pointer  w-[150px] h-[50px] ' src={logo} alt="4MotoForRent logo" />
 
-        </Link>
+        </RouterLink>
         </Fade>
         </div>
         <div className='absolute top-0 z-10 lg:hidden bg-white h-[5rem] w-full' />
@@ -100,7 +95,8 @@ const Navbar = () => {
         </Fade>
         </div>
         
-        <div className={`fixed  ${activeMobileMenu ? "animate-[appearMenu_.5s_ease-in-out_forwards]":"animate-[reverseAppearMenu_.5s_ease-in-out_forwards]"}  bg-white w-full h-[11rem] left-0 `} >
+        <div className={`flex justify-left fixed  ${activeMobileMenu ? "animate-[appearMenu_.5s_ease-in-out_forwards]":"animate-[reverseAppearMenu_.5s_ease-in-out_forwards]"}  bg-white w-full h-[11rem] left-0 `} >
+          <div className='w-[20rem] h-full' >
           <div className='absolute flex flex-col lg:hidden items-center text-left w-full h-[9rem]  justify-between ' >
           <Link
             activeClass="active"
@@ -111,7 +107,7 @@ const Navbar = () => {
             duration={500}
             href="Contact"
           >
-             <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}}  className='flex mt-[1.5rem] px-[6rem] '><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
+             <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}}  className='relative mt-[1.5rem]  flex items-center w-full text-left w-[10rem] justify-left'><span className='  mr-2 text-[25px]'><FaMotorcycle /></span>MOTOCICLETE </button>
           </Link>
           <Link
             activeClass="active"
@@ -122,7 +118,7 @@ const Navbar = () => {
             duration={500}
             href="Tururi Ghidate"
           >
-            <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}} className='relative w-[21.3rem] flex items-center text-left px-[6.1rem] '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI PERFECTIONARE </button>
+            <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}} className='relative  flex items-center w-full text-left w-[10rem] justify-left '><span className='  text-[25px] mr-2'><GiCartwheel /></span>CURSURI<br /> PERFECTIONARE </button>
           </Link>
           <Link
             activeClass="active"
@@ -133,9 +129,10 @@ const Navbar = () => {
             duration={500}
             href="Despre Noi"
           >
-            <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}} className='flex px-[6rem] mr-[3rem] '><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
+            <button onClick={()=>{navigate("/") ; setActiveMobileMenu(prev=>!prev)}} className='relative  flex items-center w-full text-left w-[10rem] justify-left'><span className=' mr-2 text-[25px]'><AiFillQuestionCircle /></span>DESPRE </button>
           </Link>
            
+          </div>
           </div>
         </div>
     </div>

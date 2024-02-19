@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 const About = () => {
   return (
-    <div name="About" className='relative bg-[#FFFFFF] flex flex-col items-center w-full h-[50rem] lg:h-[70rem] mt-[2rem] lg:mt-[10rem] '>
+    <div name="About" className='relative bg-[#FFFFFF] flex flex-col items-center w-full h-[50rem] lg:h-[70rem] mt-[10rem] lg:mt-[10rem] '>
        <Fade top>
          <div className=' flex  w-full justify-center items-center '>
             <span className='sticky  w-[20%] h-[3px] bg-black mr-[2rem] ' />
